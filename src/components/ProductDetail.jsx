@@ -140,6 +140,7 @@ const ProductDetail = () => {
                                 <MenuButton
                                     marginRight="-10px"
                                     as={Button}
+                                    background="transparent"
                                     rightIcon={
                                         <BiChevronDown
                                             style={{
