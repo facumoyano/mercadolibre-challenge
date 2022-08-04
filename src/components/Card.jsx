@@ -1,30 +1,42 @@
 import React from "react";
 import { Box, Image, Text, Stack } from "@chakra-ui/react";
 
-const Card = () => {
+const Card = ({ item }) => {
     return (
-        <Box>
-            <Box shadow="base" _hover={{ shadow: "xl" }} width="224px">
+        <Box mx={2}>
+            <Box
+                border="1px solid #E5E5E5"
+                borderRadius="10px"
+                _hover={{ shadow: "xl" }}
+                shadow="md"
+                height="360px"
+            >
                 <Image
-                    src="http://http2.mlstatic.com/D_754004-MLA32299823528_092019-O.jpg"
+                    src={item.img}
                     width="224px"
                     height="224px"
-                    objectFit="cover"
+                    objectFit="contain"
                 />
-                <Box p={4}>
-                    <Text fontSize="22px">$ 4.904</Text>
-                    <Text color="#00A650" fontSize="14px" fontWeight="600">
-                        Envío gratis
-                    </Text>
-                    <Text
-                        fontSize="14px"
-                        color="blackAlpha.600"
-                        textTransform="capitalize"
-                        mt={1}
-                    >
-                        Peluche Stich 30cm importado lilo y stich hermosos
-                        suaves
-                    </Text>
+                <Box borderTop="1px solid #E5E5E5">
+                    <Box p={2}>
+                        <Text fontSize="22px">
+                            ${" "}
+                            {item.price
+                                .toString()
+                                .replace(/\B(?=(\d{3})+(?!\d))/g, ".")}
+                        </Text>
+                        <Text color="#00A650" fontSize="14px" fontWeight="600">
+                            Envío gratis
+                        </Text>
+                        <Text
+                            fontSize="14px"
+                            color="blackAlpha.600"
+                            textTransform="capitalize"
+                            mt={1}
+                        >
+                            {item.desc}
+                        </Text>
+                    </Box>
                 </Box>
             </Box>
         </Box>

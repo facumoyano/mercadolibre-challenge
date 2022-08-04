@@ -24,7 +24,7 @@ import data from "../data";
 const ProductDetail = () => {
     const [unidades, setUnidades] = useState("1 unidad");
     return (
-        <Box border="1px solid RGBA(0, 0, 0, 0.16)" borderRadius="8px" p={4}>
+        <Box border="1px solid RGBA(0, 0, 0, 0.08)" borderRadius="8px" p={4}>
             <Stack>
                 <Stack
                     direction="row"
@@ -67,7 +67,7 @@ const ProductDetail = () => {
                         size={24}
                         color1="RGBA(0, 0, 0, 0.16)"
                         color2="#3483FA"
-                        value={4.5}
+                        value={5}
                     />
                     <Link fontSize="sm">(42)</Link>
                 </Stack>
