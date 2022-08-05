@@ -18,13 +18,43 @@ const TabOpinions = () => {
         <Box width="100%">
             <Tabs width="100%" colorScheme="#3483fa" opacity="1">
                 <TabList display="grid" gridTemplateColumns="1fr 1fr 1fr">
-                    <Tab fontSize="16px" fontWeight="700">
+                    <Tab
+                        fontSize="16px"
+                        fontWeight="700"
+                        _selected={{
+                            color: "#3483fa",
+                            borderBottom: "2px solid #3483fa",
+                        }}
+                        _active={{
+                            backgroundColor: "rgba(65, 137, 230, 0.15)",
+                        }}
+                    >
                         Todas
                     </Tab>
-                    <Tab fontSize="16px" fontWeight="700">
+                    <Tab
+                        fontSize="16px"
+                        fontWeight="700"
+                        _selected={{
+                            color: "#3483fa",
+                            borderBottom: "2px solid #3483fa",
+                        }}
+                        _active={{
+                            backgroundColor: "rgba(65, 137, 230, 0.15)",
+                        }}
+                    >
                         Positivas
                     </Tab>
-                    <Tab fontSize="16px" fontWeight="700">
+                    <Tab
+                        fontSize="16px"
+                        fontWeight="700"
+                        _selected={{
+                            color: "#3483fa",
+                            borderBottom: "2px solid #3483fa",
+                        }}
+                        _active={{
+                            backgroundColor: "rgba(65, 137, 230, 0.15)",
+                        }}
+                    >
                         Negativas
                     </Tab>
                 </TabList>
